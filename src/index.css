@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  .leaflet-layer,
+  .leaflet-control-zoom-in,
+  .leaflet-control-zoom-out,
+  .leaflet-control-attribution {
+    filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+  }
+
+  .leaflet-popup-content-wrapper,
+  .leaflet-popup-tip {
+    background-color: #171717 !important;
+    color: white !important;
+  }
+
+  .leaflet-popup-content-wrapper {
+    border-radius: 0.5rem !important;
+  }
+
+  .leaflet-container {
+    background: #171717  !important;
+  }
+}
